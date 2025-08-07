@@ -35,12 +35,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
         if (isValid) {
             feedbackDiv.textContent = 'Registration successful!';
+            feedbackDiv.style.color = '#28a745'; // Correct color for success
             feedbackDiv.style.backgroundColor = '#d4edda';
-            feedbackDiv.style.color = '#155724';
         } else {
             feedbackDiv.innerHTML = messages.join('<br>');
+            feedbackDiv.style.color = '#dc3545'; // Correct color for error
             feedbackDiv.style.backgroundColor = '#f8d7da';
-            feedbackDiv.style.color = '#721c24';
         }
     });
 });
